@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Angular Localization</title>
+    <title>Angularjs Directives Talking To Directives</title>
     <!-- inject:css -->
     <link rel="stylesheet" href="assets/vendor/css/vendor.min.css">
     <!-- endinject -->
@@ -19,10 +19,18 @@
 </head>
 
 <body ng-app="app">
-    <div ui-view></div>
+    <div class="container">
+        <div class="page-header">
+            <h1>AngularJs Directives Talking To Directives</h1>
+        </div>
+        <phones-directive add-touch-directive add-battery-directive class="btn btn-primary">Click me! I have 2 features.</phones-directive>
+
+        <phones-directive add-touch-directive class="btn btn-primary">Click me! I have only 1 feature.</phones-directive>
+    </div>
+    </div>
     <!-- inject:js -->
     <script src="assets/vendor/js/vendor.js"></script>
-    <script src="app/angularjs-localization-app-1.0.0.min.js"></script>
+    <script src="app/angularjs-directives-talking-directives-app-1.0.0.min.js"></script>
     <!-- endinject -->
 </body>
 
